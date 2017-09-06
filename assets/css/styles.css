@@ -1,0 +1,64 @@
+body {
+  font-family: 'Passion One', cursive;
+  background-color: #F8FF84;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.inline {
+  display: inline-block;
+}
+.jumbotron {
+  background-color: #2868C7;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.header {
+}
+.header h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #F8FF84;
+}
+.header .fa {
+  color: #F8FF84;
+  font-size: 100px;
+  margin: 15px 0;
+}
+.start-btn {
+  background-color: #c9302c;
+}
+.start-btn:hover {
+  background-color: #d9534f;
+}
+.start-btn h2 {
+  font-size: 50px;
+  color:#F8FF84;
+}
+#question {
+  padding: 0 20px;
+}
+#question h3 {
+  font-size: 64px;
+  color: #2868C7;
+}
+#answer p {
+  font-size: 46px;
+  color: #ff0000;
+}
+.footer {
+  background-color: #2868C7;
+  border-radius: 5px;
+  color: #F8FF84;
+  padding: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
