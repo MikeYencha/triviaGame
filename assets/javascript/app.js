@@ -7,6 +7,30 @@ var answer03 = ['Ecuador','Chad','Andorra','Columbia'];
 var answer04 = ['Distance from the earth.','Temperature','Plasma','Pudding'];
 var win = 0;
 var lose = 0;
+var myQuestions = [
+    {
+      question: 'what pigment makes roses red?',
+      answer: 'Anthocyanins',
+      potentialAnswers: ['Anthocyanins','Carotenoids','Aurite','Chlorophyll']
+    },
+    {
+      question: 'Which is a pigment of the color blue?',
+      answer: 'Indigo',
+      potentialAnswers: ['Navy','Royal','Indigo','Klein']
+    },
+    {
+      question: 'Which international flag uses only the colors of this web page?',
+      answer: 'Columbia',
+      potentialAnswers:['Ecuador','Chad','Andorra','Columbia']
+    },
+    {
+      question: 'What makes the sun yellow?',
+      answer: 'Temperature',
+      potentialAnswers: ['Distance from the earth.','Temperature','Plasma','Pudding']
+    }
+]
+
+}
 
 $(document).ready(function() {
 
