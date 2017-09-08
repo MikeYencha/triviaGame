@@ -1,10 +1,10 @@
+// var questions = ['what pigment makes red roses red?', 'Which is a pigment of the color blue?','Which international flag uses only the colors of this web page?','What makes the sun yellow?'];
+// var answer01 = ['Anthocyanins','Carotenoids','Aurite','Chlorophyll'];
+// var answer02 = ['Navy','Royal','Indigo','Klein'];
+// var answer03 = ['Ecuador','Chad','Andorra','Columbia'];
+// var answer04 = ['Distance from the earth.','Temperature','Plasma','Pudding'];
 var correctAnswer = 0;
 var wrongAnswer = 0;
-var questions = ['what pigment makes red roses red?', 'Which is a pigment of the color blue?','Which international flag uses only the colors of this web page?','What makes the sun yellow?'];
-var answer01 = ['Anthocyanins','Carotenoids','Aurite','Chlorophyll'];
-var answer02 = ['Navy','Royal','Indigo','Klein'];
-var answer03 = ['Ecuador','Chad','Andorra','Columbia'];
-var answer04 = ['Distance from the earth.','Temperature','Plasma','Pudding'];
 var win = 0;
 var lose = 0;
 var myQuestions = [
