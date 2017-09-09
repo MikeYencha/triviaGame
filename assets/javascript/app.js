@@ -29,36 +29,38 @@ var myQuestions = [
       potentialAnswers: ['Distance from the earth.','Temperature','Plasma','Pudding']
     }
 ]
-
-}
+// var x = myQuestions[0].potentialAnswers.([Math.floor(Math.random() * myQuestions[0].potentialAnswers.length)]);
+// console.log(x);
 
 $(document).ready(function() {
 
 function getQuestion() {
-    // console.log(questions[0]);
-    // console.log(questions[1]);
-    // console.log(questions[2]);
-    // console.log(questions[3]);
-
+  //this is a test
+  $('#question').text(myQuestions[0].question);
+// Get a question from the myQuestions object
   }
 function getAnswer() {
-  console.log(questions[0] + ' ' + answer01[0]);
-  console.log(questions[1] + ' ' + answer02[2]);
-  console.log(questions[2] + ' ' + answer03[3]);
-  console.log(questions[3] + ' ' + answer04[1]);
+  //this is a test
+  var answer = $.toString(myQuestions[0].potentalAnswers;
+    console.log(answer);
+  $('.answer').text(answer);
+  // pull the answers from the potentialAnswers array and display them in the <p> tags with the class of answer in the display
+}
+function evalutateAnswer() {
+  // check the selected answer to the acual answer presented in the myQuestions object.  If it is correct win++ if not loss ++. evelautate the number of wins and losses if they are >= 5 the game is over
+}
+function gameTimer() {
+  // set a timeOut function for two events.  One create timer that displays and countdowns from 25 in the timer class.  Evalutate if an answer has been selected within 25 seconds.  If an answer is not selected within 25 seconds loss++
 }
 
-
 $('.start-btn').on('click', function() {
+  //this is a text
   console.log('I\'ve been clicked');
   getQuestion();
   getAnswer();
+  //the main function of the application.  When start is pressed, the functions of above will be selected. gameTimer(), getQuestions, getAnswer, evalutateAnswer().  Should the order be start game on click then all functions held inside the gameTimer?
 });
 
 
 
 });
-// var numbers = [1, 2, 3, 4, 5, 6];
-// $.each(numbers , function (index, value){
-//   console.log(index + ':' + value);
-// });
