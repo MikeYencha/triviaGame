@@ -44,7 +44,7 @@ function getAnswer() {
   var answer = $.toString(myQuestions[0].potentalAnswers;
     console.log(answer);
   $('.answer').text(answer);
-  // pull the answers from the potentialAnswers array and display them in the <p> tags with the class of answer in the display
+  // pull the answers from the potentialAnswers array and display them in the <p> tags with the class of answer in the display.  currently, the <p> tags are hardcoded in the dom.  It has been suggested, it would be easier to display randoomly selected potentialAnswers and add them to dynamically generated <p> tages ex: ...html('<p class="answer">potentialAnswers[i]</p>).  ???
 }
 function evalutateAnswer() {
   // check the selected answer to the acual answer presented in the myQuestions object.  If it is correct win++ if not loss ++. evelautate the number of wins and losses if they are >= 5 the game is over
