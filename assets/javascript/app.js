@@ -7,28 +7,51 @@ var correctAnswer = 0;
 var wrongAnswer = 0;
 var win = 0;
 var lose = 0;
-var myQuestions = [
-    {
+var myQuestions = [{
+      id : q0,
       question: 'what pigment makes roses red?',
       answer: 'Anthocyanins',
-      potentialAnswers: ['Anthocyanins','Carotenoids','Aurite','Chlorophyll']
-    },
-    {
+      potentialAnswers: [{
+        id : pa0,
+        : 'Anthocyanins',
+        : 'Carotenoids',
+        : 'Aurite',
+        : 'Chlorophyll'
+        }]
+    },{
+      id : q1,
       question: 'Which is a pigment of the color blue?',
       answer: 'Indigo',
-      potentialAnswers: ['Navy','Royal','Indigo','Klein']
-    },
-    {
+      potentialAnswers: [{
+          id : pa1,
+          : 'Navy',
+          : 'Royal',
+          : 'Indigo',
+          : 'Klein'
+        }]
+    },{
+      id : q2,
       question: 'Which international flag uses only the colors of this web page?',
       answer: 'Columbia',
-      potentialAnswers:['Ecuador','Chad','Andorra','Columbia']
-    },
-    {
+      potentialAnswers: [{
+          id : pa2,
+          : 'Ecuador',
+          : 'Chad',
+          : 'Andorra',
+          : 'Columbia'
+        }]
+      },{
+      id : q3,
       question: 'What makes the sun yellow?',
       answer: 'Temperature',
-      potentialAnswers: ['Distance from the earth.','Temperature','Plasma','Pudding']
-    }
-]
+      potentialAnswers: [{
+        id : pa3,
+        : 'Distance from the earth.',
+        : 'Temperature',
+        : 'Plasma',
+        : 'Pudding'
+      }]
+    }];
 // var x = myQuestions[0].potentialAnswers.([Math.floor(Math.random() * myQuestions[0].potentialAnswers.length)]);
 // console.log(x);
 
