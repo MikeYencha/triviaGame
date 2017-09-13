@@ -14,6 +14,9 @@ body {
 .inline {
   display: inline-block;
 }
+.hidden {
+  display: none;
+}
 .jumbotron {
   background-color: #2868C7;
   padding-top: 20px;
@@ -49,7 +52,8 @@ body {
   font-size: 64px;
   color: #2868C7;
 }
-#answer p {
+#answer .answer {
+  text-align: center;
   font-size: 46px;
   color: #ff0000;
 }
