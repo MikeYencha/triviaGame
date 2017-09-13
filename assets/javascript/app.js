@@ -33,7 +33,7 @@ $(document).ready(function() {
       if(question.answerNum === i){
         // this is a correct answer
         answerDiv.click(function() {
-          alert('you\'re answer is correct!');
+          // alert('you\'re answer is correct!');
           currentQuestion++;
           correctAnswer++;
           showQuestion(currentQuestion);
@@ -41,7 +41,7 @@ $(document).ready(function() {
       } else {
         // this is an incorrect answer
         answerDiv.click(function() {
-          alert('You\'ve selected the wrong answer.');
+          // alert('You\'ve selected the wrong answer.');
           currentQuestion++;
           wrongAnswer++;
           showQuestion(currentQuestion);
@@ -54,31 +54,37 @@ $(document).ready(function() {
   }
 
   function showQuestion(i) {
-    var html = '<div class="results">' +
-                '<p class="correct">You correctly answered ' + correctAnswer + ' questions.' +
-                '<p class="wrong">You incorrectly answered ' + wrongAnswer + ' questions.'
-                '</div>'
+    // html to enter correct and incorrect answers
+
     if(currentQuestion < myQuestions.length) {
       $('#question').text(myQuestions[i].text);
       $('#answer').empty();
       showAnswers(myQuestions[currentQuestion]);
-    } else {
-      console.log('the quiz is over');
-      $('#content01').empty();
-      $('#content02').empty();
-      $('#content02').append(html);
-      // var resultsCorrect = $('<p>Correct Answers: ' + correctAnswer + '</p>');
-      // var resultsWrong = $('<p>Wrong Answers: ' + wrongAnswer + '</p>')
-      // $('#jumbotron h1').text('You answered:');
-      // $('#jubotron .header').append(resultsCorrect);
     }
+    isOver();
+  }
+
+  function isOver() {
+    if(currentQuestion === 4) {
+      var html = '<div class="results">' +
+                  '<p class="correct">You correctly answered ' + correctAnswer + ' questions.' +
+                  '<p class="wrong">You incorrectly answered ' + wrongAnswer + ' questions.'
+                  '</div>'
+
+     console.log('the quiz is over');
+     $('#content01').empty();
+     $('#content02').empty();
+     $('#content02').append(html);
+   }
   }
 
   $('.start-btn').on('click', function() {
-    // console.log('I\'ve been clicked');
-    // $('.start-btn').addClass('hiden');
     showQuestion(currentQuestion);
     $('.start-btn').addClass('hidden');
   });
 
 });
+
+// setTimeout(function() {
+//
+// }, 25000);
