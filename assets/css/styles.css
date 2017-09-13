@@ -52,7 +52,7 @@ body {
   font-size: 64px;
   color: #2868C7;
 }
-#answer .answer {
+#answer .answer, #content02 p {
   text-align: center;
   font-size: 46px;
   color: #ff0000;

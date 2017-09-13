@@ -54,6 +54,10 @@ $(document).ready(function() {
   }
 
   function showQuestion(i) {
+    var html = '<div class="results">' +
+                '<p class="correct">You correctly answered ' + correctAnswer + ' questions.' +
+                '<p class="wrong">You incorrectly answered ' + wrongAnswer + ' questions.'
+                '</div>'
     if(currentQuestion < myQuestions.length) {
       $('#question').text(myQuestions[i].text);
       $('#answer').empty();
@@ -62,10 +66,11 @@ $(document).ready(function() {
       console.log('the quiz is over');
       $('#content01').empty();
       $('#content02').empty();
-      var resultsCorrect = $('<p>Correct Answers: ' + correctAnswer + '</p>');
-      var resultsWrong = $('<p>Wrong Answers: ' + wrongAnswer + '</p>')
-      $('#jumbotron h1').text('You answered:');
-      $('#jubotron .header').append(resultsCorrect);
+      $('#content02').append(html);
+      // var resultsCorrect = $('<p>Correct Answers: ' + correctAnswer + '</p>');
+      // var resultsWrong = $('<p>Wrong Answers: ' + wrongAnswer + '</p>')
+      // $('#jumbotron h1').text('You answered:');
+      // $('#jubotron .header').append(resultsCorrect);
     }
   }
 
